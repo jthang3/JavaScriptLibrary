@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Hello world</h1>
+    <!--ALl of our HTML code will go there-->
+    <p id = "testParagraph">sample text</p>
+    <p class = "sampleClass">This paragraph has a class of 'sampleClass</p>
+    <script type = "text/javascript">
+        /*All of my cod will go here.*/
+        var x = 10;
+        console.log(x);
+        //innerHTML create a new element meanwhile innerText only change the text inside of the element. 
+        document.getElementById("testParagraph").style.color = "blue";
+        console.log(document.getElementById("testParagraph").style.color)
+        //console.log(document.querySelectorAll(".sampleClass")[0].innerText);
+        document.querySelectorAll(".sampleClass")[0].innerHTML = "<span>I'm a whole new element!</span>";
+    </script>
+</body>
+</html>
