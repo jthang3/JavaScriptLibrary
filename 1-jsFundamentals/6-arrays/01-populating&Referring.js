@@ -16,5 +16,6 @@ let students = ["Mitchel","Bill","Brittany",23,true,["Hustin","Amanda","John",[2
 //instance
 console.log(students instanceof Object);
 //                 [original array][nested array]
-console.log(students[5][1]);
-console.log(students[5][3][2]);
+// console.log(students[5][1]);
+// console.log(students[5][3][2]);
+console.log(students[5][3][1]);
