@@ -11,16 +11,23 @@ for (let item in student){
 
 let catArray = ["tabby","british shorthair","burmese","maine coon", "rag doll"];
 
+
+
 //this get the key of an index.
 
 for (let cat in catArray){
     console.log(cat);
     console.log(catArray[cat]);
 }
-let name = "Joseph"
-let finalName;
-for (let cap in name){
-    (cap == 0)?finalName = name[cap].toUpperCase(): finalName += name[cap].toLowerCase();
+let name = "joSeph"
+for(let i in name){
+    if(i== 0){
+        name = name.replace(name[i],name[i].toUpperCase());
+    }
+    else{
+        name = name.replace(name[i],name[i].toLowerCase());
+    }
+    
 }
-console.log(finalName);
+console.log(name);
 

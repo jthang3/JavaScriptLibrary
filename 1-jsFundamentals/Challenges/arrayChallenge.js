@@ -27,3 +27,26 @@ function printOrder(colors,suffixes){
     }
 }
 printOrder(color,suffixe);
+
+
+function fixedMe(name){
+    console.log(name.charAt(0).toUpperCase()+name.slice(1).toLowerCase());
+}
+
+fixedMe("jOhN");
+
+function anotherWay(name){
+    if(name.charAt(0).toLowerCase()){
+        name = name.replace(name[0],name.charAt(0).toUpperCase());
+    }
+    console.log(name[0]+name.slice(1).toLowerCase());
+}
+anotherWay("jOhN");
+
+function testing (name){
+    console.log(name.forEach(value =>console.log(value)));
+}
+
+let name = "John";
+name[0]
+console.log(name[0]);
